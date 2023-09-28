@@ -17,11 +17,77 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1368px;
+  margin: 0 auto;
+}
+
+.main-bg-color {
+  background-color: #262626;
+}
+
+.main-bg-orange-color {
+  background-color: #ff6b00;
+}
+
+.main-color {
+  color: #262626;
+}
+
+.main-gray-color {
+  color: #838383;
+}
+
+.ticker {
+  position: relative;
+  overflow: hidden;
+  max-width: 802px;
+}
+
+.ticker__wrapper {
+  width: 200%;
+  animation: ticker 4s infinite linear;
+}
+
+.ticker__wrapper p {
+  white-space: nowrap;
+  width: 100%;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.small-text {
+  font-size: 10px;
+}
+
+.main-second-gray-color {
+  background-color: #1313136b;
+}
+
+.main-third-gray-color {
+  color: #474747;
+}
+
+.main-black-color {
+  color: #333333;
+}
+
+.main-bg-black-color {
+  background-color: #333333;
+}
+
+.main-orange-color {
+  color: #ff6b00;
 }
